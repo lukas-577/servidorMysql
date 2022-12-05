@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gastos",
+  "info": {
+    "name": "Gastos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "biginteger"
+    },
+    "bencina": {
+      "type": "biginteger"
+    },
+    "vehiculos": {
+      "via": "gasto",
+      "collection": "vehiculos"
+    }
+  }
+}

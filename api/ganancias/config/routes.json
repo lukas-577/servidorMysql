@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ganancias",
+      "handler": "ganancias.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ganancias/count",
+      "handler": "ganancias.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ganancias/:id",
+      "handler": "ganancias.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ganancias",
+      "handler": "ganancias.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ganancias/:id",
+      "handler": "ganancias.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ganancias/:id",
+      "handler": "ganancias.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

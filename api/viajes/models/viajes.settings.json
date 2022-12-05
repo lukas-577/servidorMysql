@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "viajes",
+  "info": {
+    "name": "Viajes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "origen": {
+      "type": "string"
+    },
+    "destino": {
+      "type": "string"
+    },
+    "kilometros_recorrido": {
+      "type": "biginteger"
+    },
+    "vehiculos": {
+      "via": "viaje",
+      "collection": "vehiculos"
+    }
+  }
+}

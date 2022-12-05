@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ganancias",
+  "info": {
+    "name": "Ganancias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ganancia": {
+      "type": "biginteger"
+    },
+    "vehiculos": {
+      "via": "ganancia",
+      "collection": "vehiculos"
+    }
+  }
+}

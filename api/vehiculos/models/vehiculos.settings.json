@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehiculos",
+  "info": {
+    "name": "Vehiculos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "patente": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "anio": {
+      "type": "biginteger"
+    },
+    "viaje": {
+      "model": "viajes",
+      "via": "vehiculos"
+    },
+    "gasto": {
+      "model": "gastos",
+      "via": "vehiculos"
+    },
+    "ganancia": {
+      "model": "ganancias",
+      "via": "vehiculos"
+    },
+    "marca": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "kilometros_litro": {
+      "type": "biginteger"
+    }
+  }
+}
